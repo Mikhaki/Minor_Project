@@ -12,5 +12,5 @@ function find_edit(){
     change_date_node.innerHTML="<b>05.06.2004</b>"
 }
 
-const node_for_click = document.getElementById("for click")
+const node_for_click = document.getElementById("for_click")
 node_for_click.addEventListener("click",find_edit)
