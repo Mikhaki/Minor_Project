@@ -6,7 +6,14 @@
 </head>
 
 <html>
-<body>
+<body>        
+<ul style="list-style:none; display:flex; align-items:center; gap:15px; padding:0; margin:0;">
+    <li><a href="./main_page.html" target="_self"><b>Начальная(текущая)страница сайта</b></a>
+    <li><a href="./page_for_forms.html" target="_self">Заказать кофе</a>
+    <li><a href="./table_page.html" target="_self">Кофейный календарь</a>
+    <li><a href="https://cofix.global/" target="_blank">Наши партнеры</a>
+    <li><a href="https://cofix.global/"> <img src="./images/scale_1200.png" alt="Наши партнеры" width="40px" ></a></li>     
+</ul>
 <h3 align="center">Закажите напиток</h3>
 <!--<form action="../../cgi-bin/form_action.py" method='get' target='_self'>-->
 <!--<form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method='get' target='_self'>-->
@@ -43,41 +50,6 @@
 
     <p>Дата: <input type="date" name="user_date"  value='2024-10-02'></p>
     <p>Номер карты: <input type="Password" name="phone" size=9  value=""></p>
-    <!--Все нижерасположенные фрагменты перемещать нельзя, редактировать можно-->
-    <p>Название файла: <input type="Техт" name="000_file_name" value="Н_ОW_Г_326510_1_Ivanov.txt" size='30'></p>
-
-    <p> Тип записи в файл:<select name="010_mode">
-        <OPTION value="a">a - дозаписать в файл</OPTION>
-        <OPTION value="w">w - очисить файл и записать в файл</OPTION>
-    </select></p>
-
-    <input type="hidden" name="function"  value="page">
-    <input type="hidden" name="page_id"  value="3">
-
-    <p>
-        <input type="Reset"  name="Reset"  value="Обновить">
-        <input type="Submit" name="submit"  value="Отправить">
-    </p>
-
-</form>
-<pre>
-В ~/public_html/education/forms:
-
-Задание 1
-
-Создать страницу позволяющую отправлять на удаленный сервер данные типа:
-- заказы товаров из эл.магазина
-- создание телефонный справочник
-- расчет оплаты за выполненную сдельную работу
-- прибыльность небольшой розничной точки
-- оценка инвестиционного проект
-или др.
-
-Задание 2
-
-Создать страницу, отправляющие данные паспорта на удаленный сервер
-Страница должна содержать все перечисленные примеры отправки данных,
-в качетве прототипа использовать ранее созданную таблицу с паспортом
-</pre>
+    
 </body>
 </html>
