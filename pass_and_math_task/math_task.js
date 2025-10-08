@@ -1,22 +1,29 @@
 function verify() {
-    console.log("a, b, c")
+    console.log("a, h, r, m")
     let a = parseInt(elementA.value);
-    let b = parseInt(elementB.value);
-    let c = parseInt(elementC.value);
-    console.log(a, b, c)
+    let h = parseInt(elementH.value);
+    let r = parseInt(elementR.value);
+    let m = parseInt(elementM.value);
+    console.log(a, h, r, m)
 
-    let low, high
-    if (a < b) { low = a;    high = b;  }
-    else { low = b; high = a; }
+    cube_value = Math.pow(a, 3)
+    cyl_value = Math.pow(r, 2) * Math.PI * h
 
-    if (c >= low && c <= high) {
-        result = "С принадлежит заданному диапазону"
-        check = true;
-    } 
+    // if (cube_value < m && cyl_value < m) { result = "Нельзя наполнить ни одну емкость" }
+    if (cube_value < m && cyl_value < m) { result = "Можно заполнить обе емкости" }
     else {
-        result = "С не принадлежит заданному диапазону"
-        check = false;
+        if (cube_value > m && cyl_value > m) { result = "Нельзя наполнить ни одну емкость" }
+        else {
+
+        }
     }
+    if (cube_value > m && cyl_value < m) { result = "Можно заполнить вторую емкость" }
+    else {
+        if (cube_value < m && cyl_value > m) { result = "Можно заполнить первую емкость" }
+        else { }
+    }
+    check = true
+    console.log(result)
     document.getElementById("result").value = result;
 }
 
@@ -34,8 +41,9 @@ let result;
 let check;
 
 const elementA = document.getElementById("a");
-const elementB = document.getElementById("b");
-const elementC = document.getElementById("c");
+const elementH = document.getElementById("h");
+const elementR = document.getElementById("r");
+const elementM = document.getElementById("m");
 
 const elementVerify = document.getElementById("verify");
 elementVerify.addEventListener('click', verify);

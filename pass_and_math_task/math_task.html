@@ -11,7 +11,27 @@
                 <li><a href="./math_task.html">Решение задачи</a></li>
             </ul>
         </nav>
-    <body>
+    
 
+    <body>
+    <p name="formulation">Имеются две ёмкости: кубическая с ребром A, цилиндрическая с высотой H и радиусом основания R. Определить, можно ли заполнить жидкостью
+объёма M первую ёмкость, вторую, обе.</p>
+    <form action="https://www.bing.com/search?" id="UserEnter" name="UserEnter" target="_blank">
+        <ul>
+            <li>Для поисковика:<input name="q" value="search"></li>
+            <li>Формулировка задачи 
+                <br><textarea cols="60" rows="4" id="task" name="formulation">Имеются две ёмкости: кубическая с ребром A, цилиндрическая с высотой H и радиусом основания R. Определить, можно ли заполнить жидкостью
+объёма M первую ёмкость, вторую, обе.</textarea></li>
+            <li>Ребро А: <input id="a" name="a"  type="number" value="5"></li>
+            <li>Высота Н: <input id="h"  name="h" type="number" value="5"></li>
+            <li>Радиус R: <input id="r"  name="r" type="number" value="5"></li>
+            <li>Объем М: <input id="m"  name="m" type="number" value="10"></li>
+            <li>Результат решения задачи: <input id="result" name="result" value="не определен"></li>
+            <li>действие 1: <input id="verify" type="button" value="Проверить"></li>
+            <li>действие 2: <input id="send" type="button" value="Отправить"></li>
+        </ul>
+    </form>
+</body>
+<script src="./math_task.js"></script>
     </body>
 </html>
