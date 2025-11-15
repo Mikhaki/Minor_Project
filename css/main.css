@@ -1,0 +1,48 @@
+body {
+  background-color: rgb(153, 228, 162);
+}
+
+h1 {
+  color: rgb(31, 101, 43);
+  margin-left: 20px;
+}
+
+#current_page {
+/* bold line in nav bar */
+font-weight: bold;
+}
+
+p {
+  font: 1em sans-serif;
+}
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+  background-color: #4d9b49;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 1000px;
+    background-color: #4d9b49;
+}
+
+li a {
+  display: block;
+  /* width: 200px; */
+}
+
+li a:hover {
+  background-color: #3f8757;
+  color: #4d9b49;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
