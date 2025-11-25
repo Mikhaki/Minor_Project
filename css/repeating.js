@@ -53,10 +53,13 @@ async function loadAchievements() {
         //     `
         // })
 
-        listHTML += `</ul>`
+        tableHTML += `
+                </tbody>
+            </table>
+        `
 
         // Вставляем список в контейнер
-        container.innerHTML = listHTML
+        container.innerHTML = tableHTML
 
     } catch (error) {
         console.error("Ошибка загрузки достижений:", error)
