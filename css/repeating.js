@@ -15,7 +15,7 @@ async function loadAchievements() {
             throw new Error("Элемент achievements_container не найден")
         }
         
-        // Создаем список достижений
+        // Создаем таблицу достижений
         let tableHTML = `
             <table class="achievements-table">
                 <thead>
@@ -29,36 +29,26 @@ async function loadAchievements() {
                 <tbody>
         `
 
-        // Добавляем элементы для каждого достижения
-        achievements.forEach(achievement => {`
+        // Добавляем строки для каждого достижения
+        achievements.forEach(achievement => {
+            tableHTML += `
                 <tr class="achievement-row">
                     <td class="achievement-icon-cell">
                         <img class="achievement-icon" src="${achievement.icon}" alt="${achievement.title}">
                     </td>
                     <td class="achievement-title-cell">${achievement.title}</td>
                     <td class="achievement-description-cell">${achievement.description}</td>
-                    <td class="achievement-value-cell">${achievement.value} exp</td>
+                    <td class="achievement-value-cell">${achievement.value}</td>
                 </tr>
             `
-    })
-        //     tableHTML += `
-        //         <li class="achievement-item">
-        //             <div class="achievement-content">
-        //                 <h4 class="achievement-title">${achievement.title}</h4>
-        //                 <p class="achievement-description">${achievement.description}</p>
-        //                 <p class="achievement-value">${achievement.value}</p>
-        //                 
-        //             </div>
-        //         </li>
-        //     `
-        // })
+        })
 
         tableHTML += `
                 </tbody>
             </table>
         `
 
-        // Вставляем список в контейнер
+        // Вставляем таблицу в контейнер
         container.innerHTML = tableHTML
 
     } catch (error) {
