@@ -31,14 +31,14 @@
         "id": 5,
         "title": "Писатель",
         "description": "Создана первая запись в дневнике",
-        "icon": "images/diary_lover.png",
+        "icon": "images/writer.png",
         "value": "10 exp"
     },
     {
         "id": 6,
         "title": "Шопоголик",
         "description": "Открыт магазин",
-        "icon": "images/shop_lover.png",
+        "icon": "images/shopoholic.png",
         "value": "5 exp"
     },
     {
@@ -52,7 +52,7 @@
         "id": 8,
         "title": "Графоман",
         "description": "Сделано 3 записи в дневнике",
-        "icon": "images/tireless.png",
+        "icon": "images/graphoman.png",
         "value": "10 exp"
     },
     {
