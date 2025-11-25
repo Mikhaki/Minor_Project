@@ -25,9 +25,8 @@ async function loadAchievements() {
                     <div class="achievement-content">
                         <h4 class="achievement-title">${achievement.title}</h4>
                         <p class="achievement-description">${achievement.description}</p>
-                    </div>
-                    <div class="achievement-value">
-                        <span>${achievement.value} exp</span>
+                        <p class="achievement-value">${achievement.value}</p>
+                        <p class="achievement-icon">${achievement.icon}</p>
                     </div>
                 </li>
             `
