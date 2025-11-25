@@ -4,27 +4,62 @@
         "title": "Новичок",
         "description": "Пользователь провел неделю на сайте",
         "icon": "images/1_week.png",
-        "value": 10
+        "value": "10 exp"
     },
     {
         "id": 2,
         "title": "Ударник",
         "description": "Выполнено 15 задач",
         "icon": "images/15_tasks.png",
-        "value": 25
+        "value": "25 exp"
     },
     {
         "id": 3,
         "title": "Трудяга",
         "description": "Выполнено 5 задач",
         "icon": "images/5_tasks.png",
-        "value": 15
+        "value": "15 exp"
     },
     {
         "id": 4,
         "title": "Быстрый старт",
         "description": "Выполнена первая задача",
         "icon": "images/1_tasks.png",
-        "value": 5
+        "value": "5 exp"
+    },
+    {
+        "id": 5,
+        "title": "Писатель",
+        "description": "Создана первая запись в дневнике",
+        "icon": "images/diary_lover.png",
+        "value": "10 exp"
+    },
+    {
+        "id": 6,
+        "title": "Шопоголик",
+        "description": "Открыт магазин",
+        "icon": "images/shop_lover.png",
+        "value": "5 exp"
+    },
+    {
+        "id": 7,
+        "title": "Коллекционер",
+        "description": "Приобретен первый аватар",
+        "icon": "images/collector.png",
+        "value": "5 exp"
+    },
+    {
+        "id": 8,
+        "title": "Графоман",
+        "description": "Сделано 3 записи в дневнике",
+        "icon": "images/tireless.png",
+        "value": "10 exp"
+    },
+    {
+        "id": 9,
+        "title": "Ветеран",
+        "description": "На сайте более 3 месяцев",
+        "icon": "images/veteran.png",
+        "value": "15 exp"
     }
 ]

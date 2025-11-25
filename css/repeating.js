@@ -16,21 +16,42 @@ async function loadAchievements() {
         }
         
         // Создаем список достижений
-        let listHTML = `<ul class="achievements-list">`
+        let tableHTML = `
+            <table class="achievements-table">
+                <thead>
+                    <tr>
+                        <th>Иконка</th>
+                        <th>Название</th>
+                        <th>Описание</th>
+                        <th>Опыт</th>
+                    </tr>
+                </thead>
+                <tbody>
+        `
 
         // Добавляем элементы для каждого достижения
-        achievements.forEach(achievement => {
-            listHTML += `
-                <li class="achievement-item">
-                    <div class="achievement-content">
-                        <h4 class="achievement-title">${achievement.title}</h4>
-                        <p class="achievement-description">${achievement.description}</p>
-                        <p class="achievement-value">${achievement.value}</p>
+        achievements.forEach(achievement => `
+                <tr class="achievement-row">
+                    <td class="achievement-icon-cell">
                         <img class="achievement-icon" src="${achievement.icon}" alt="${achievement.title}">
-                    </div>
-                </li>
+                    </td>
+                    <td class="achievement-title-cell">${achievement.title}</td>
+                    <td class="achievement-description-cell">${achievement.description}</td>
+                    <td class="achievement-value-cell">${achievement.value} exp</td>
+                </tr>
             `
-        })
+        )
+        //     tableHTML += `
+        //         <li class="achievement-item">
+        //             <div class="achievement-content">
+        //                 <h4 class="achievement-title">${achievement.title}</h4>
+        //                 <p class="achievement-description">${achievement.description}</p>
+        //                 <p class="achievement-value">${achievement.value}</p>
+        //                 
+        //             </div>
+        //         </li>
+        //     `
+        // })
 
         listHTML += `</ul>`
 
