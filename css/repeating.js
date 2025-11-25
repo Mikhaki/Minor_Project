@@ -30,7 +30,7 @@ async function loadAchievements() {
         `
 
         // Добавляем элементы для каждого достижения
-        achievements.forEach(achievement => `
+        achievements.forEach(achievement => {`
                 <tr class="achievement-row">
                     <td class="achievement-icon-cell">
                         <img class="achievement-icon" src="${achievement.icon}" alt="${achievement.title}">
@@ -40,7 +40,7 @@ async function loadAchievements() {
                     <td class="achievement-value-cell">${achievement.value} exp</td>
                 </tr>
             `
-        )
+    })
         //     tableHTML += `
         //         <li class="achievement-item">
         //             <div class="achievement-content">
