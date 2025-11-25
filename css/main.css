@@ -1,48 +1,164 @@
 body {
-  background-color: rgb(153, 228, 162);
+  background-color: #f0f8ff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2c3e50;
 }
 
 h1 {
-  color: rgb(31, 101, 43);
+  color: #1a5276;
   margin-left: 20px;
 }
 
-#current_page {
-/* bold line in nav bar */
-font-weight: bold;
+h3 {
+  color: #2874a6;
 }
 
-p {
-  font: 1em sans-serif;
+h4 {
+  color: #3498db;
 }
 
-#nav {
+#globe_nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    background-color: #3498db;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 60px;
+    align-items: center;
+}
+
+#globe_nav a{
+  display: block;
+  color: white;
+  padding: 8px;
+}
+
+.container {
+    display: flex;
+    margin-top: 70px;
+}
+
+#page_nav {
     width: 200px;
-  background-color: #4d9b49;
+    flex-shrink: 0;
+    list-style-type: none;
+    margin-right: 20px;
+    height: fit-content;
+    background-color: #5dade2;
+    align-self: flex-start;
+    z-index: 999;
+}
+
+.intro{
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+}
+
+
+.main-content {
+    flex-grow: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.main-content img {
+    float: left;
+    margin: 0 15px 15px 0;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .main-content img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+        max-width: 100%;
+    }
 }
 
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    width: 1000px;
-    background-color: #4d9b49;
+    padding: 8px;
+    width: 100%;
+    background-color: #ebf5fb;
+    border-radius: 5px;
 }
 
-li a {
+#page_nav li a {
   display: block;
-  /* width: 200px; */
+  padding: 8px;
+  color: white;
+  text-decoration: none;
 }
 
-li a:hover {
-  background-color: #3f8757;
-  color: #4d9b49;
-}
 
 .active {
-  background-color: #4CAF50;
+  background-color: #1a5276;
   color: white;
+}
+
+
+
+/* Дополнительные цвета для использования на других страницах */
+/*
+.primary-color { background-color: #3498db; }
+.secondary-color { background-color: #5dade2; }
+.accent-color { background-color: #1a5276; }
+.light-bg { background-color: #ebf5fb; }
+.dark-text { color: #2c3e50; }
+*/
+
+
+.shop-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.shop-table th {
+    background-color: #3498db;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.shop-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ebf5fb;
+    font-weight: bold;
+    color: #1a5276;
+}
+
+.shop-table td.description{
+    color: #2c3e50;
+    font-weight: normal; /* Можно убрать жирность для описания */
+}
+
+.shop-table img {
+    height: 100px;
+    width: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.section-title {
+    margin-top: 30px;
+    color: #2874a6;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
 }

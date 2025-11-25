@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Новичок",
+        "description": "Пользователь провел неделю на сайте",
+        "icon": "images/novice.png",
+        "value": 10
+    },
+    {
+        "id": 2,
+        "title": "Ударник",
+        "description": "Выполнено 15 задач",
+        "icon": "images/hardworker.png",
+        "value": 25
+    },
+    {
+        "id": 3,
+        "title": "Трудяга",
+        "description": "Выполнено 5 задач",
+        "icon": "images/worker.png",
+        "value": 15
+    },
+    {
+        "id": 4,
+        "title": "Быстрый старт",
+        "description": "Выполнена первая задача",
+        "icon": "images/quickstart.png",
+        "value": 5
+    }
+]
