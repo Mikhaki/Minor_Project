@@ -110,15 +110,6 @@ ul {
 
 
 
-/* Дополнительные цвета для использования на других страницах */
-/*
-.primary-color { background-color: #3498db; }
-.secondary-color { background-color: #5dade2; }
-.accent-color { background-color: #1a5276; }
-.light-bg { background-color: #ebf5fb; }
-.dark-text { color: #2c3e50; }
-*/
-
 
 .shop-table {
     width: 100%;
@@ -146,7 +137,7 @@ ul {
 
 .shop-table td.description{
     color: #2c3e50;
-    font-weight: normal; /* Можно убрать жирность для описания */
+    font-weight: normal;
 }
 
 .shop-table img {

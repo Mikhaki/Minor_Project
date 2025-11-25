@@ -1,6 +1,5 @@
 async function loadAchievements() {
     try {
-        // Загружаем данные об достижениях
         let response = await fetch("achievements.json")
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`)
@@ -9,13 +8,13 @@ async function loadAchievements() {
         
         console.log("Загружены достижения:", achievements)
 
-        // Получаем контейнер для вставки
+
         let container = document.getElementById("achievements_container")
         if (!container) {
             throw new Error("Элемент achievements_container не найден")
         }
         
-        // Создаем таблицу достижений
+
         let tableHTML = `
             <table class="achievements-table">
                 <thead>
@@ -29,7 +28,7 @@ async function loadAchievements() {
                 <tbody>
         `
 
-        // Добавляем строки для каждого достижения
+
         achievements.forEach(achievement => {
             tableHTML += `
                 <tr class="achievement-row">
@@ -48,7 +47,7 @@ async function loadAchievements() {
             </table>
         `
 
-        // Вставляем таблицу в контейнер
+
         container.innerHTML = tableHTML
 
     } catch (error) {
@@ -58,5 +57,5 @@ async function loadAchievements() {
     }
 }
 
-// Запускаем загрузку при загрузке страницы
+
 document.addEventListener('DOMContentLoaded', loadAchievements)
