@@ -162,3 +162,61 @@ ul {
     border-bottom: 2px solid #3498db;
     padding-bottom: 5px;
 }
+
+.achievements-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.achievements-table th {
+    background-color: #3498db;
+    color: white;
+    padding: 15px 12px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #1a5276;
+}
+
+.achievements-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ebf5fb;
+    vertical-align: middle;
+}
+
+.achievement-icon-cell {
+    width: 80px;
+    text-align: center;
+}
+
+.achievement-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 2px solid #5dade2;
+}
+
+.achievement-title-cell {
+    font-weight: bold;
+    color: #1a5276;
+    font-size: 1.1em;
+}
+
+.achievement-description-cell {
+    color: #2c3e50;
+    line-height: 1.4;
+}
+
+.achievement-value-cell {
+    text-align: center;
+    font-weight: bold;
+    color: #2874a6;
+    background-color: #ebf5fb;
+    border-radius: 4px;
+}
+
