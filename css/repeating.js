@@ -26,7 +26,7 @@ async function loadAchievements() {
                         <h4 class="achievement-title">${achievement.title}</h4>
                         <p class="achievement-description">${achievement.description}</p>
                         <p class="achievement-value">${achievement.value}</p>
-                        <img class="achievement-icon" src="${achievement.icon}" alt="achievement-title">
+                        <img class="achievement-icon" src="${achievement.icon}" alt="${achievement.title}">
                     </div>
                 </li>
             `
