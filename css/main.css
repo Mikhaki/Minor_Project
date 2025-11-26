@@ -206,6 +206,7 @@ ul {
     body {
         font-size: 14px;
         line-height: 1.4;
+        display: flex;
     }
     
     #globe_nav {
