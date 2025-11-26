@@ -211,3 +211,147 @@ ul {
     border-radius: 4px;
 }
 
+
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    /* Адаптивная навигация */
+    #globe_nav {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 5px 0;
+    }
+    
+    #globe_nav li {
+        flex: 1;
+        min-width: 33%;
+        text-align: center;
+    }
+    
+    #globe_nav a {
+        padding: 10px 5px;
+        font-size: 0.85em;
+    }
+    
+    #globe_nav img {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    /* Основной контейнер */
+    .container {
+        flex-direction: column;
+        margin-top: 80px;
+        padding: 10px;
+    }
+    
+    /* Скрываем боковую навигацию на мобильных */
+    #page_nav {
+        display: none;
+    }
+    
+    .main-content {
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .intro {
+        width: 100%;
+    }
+    
+    .main-content img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+        max-width: 100%;
+    }
+    
+    /* Улучшаем читаемость текста */
+    h1 {
+        margin: 10px;
+        font-size: 1.4em;
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 1.2em;
+        margin: 15px 0 10px 0;
+    }
+    
+    h4 {
+        font-size: 1.1em;
+        margin: 12px 0 8px 0;
+    }
+    
+    /* Адаптируем таблицы */
+    .shop-table, .achievements-table {
+        font-size: 0.85em;
+    }
+    
+    .shop-table th, .achievements-table th {
+        padding: 10px 8px;
+    }
+    
+    .shop-table td, .achievements-table td {
+        padding: 8px 6px;
+    }
+    
+    .achievement-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .achievement-icon-cell {
+        width: 60px;
+    }
+    
+    .shop-table img {
+        height: 80px;
+    }
+    
+    /* Улучшаем списки */
+    ul {
+        padding: 10px;
+    }
+    
+    ul li {
+        margin-bottom: 8px;
+        padding: 5px 0;
+    }
+    
+    /* Адаптация для очень маленьких экранов */
+    @media (max-width: 480px) {
+        #globe_nav li {
+            min-width: 50%;
+        }
+        
+        .main-content {
+            padding: 10px;
+        }
+        
+        .shop-table, .achievements-table {
+            font-size: 0.8em;
+        }
+        
+        .achievement-icon {
+            width: 35px;
+            height: 35px;
+        }
+    }
+    
+    @media (max-width: 768px) and (orientation: landscape) {
+        #globe_nav li {
+            min-width: 20%;
+        }
+        
+        .container {
+            margin-top: 70px;
+        }
+    }
+}
