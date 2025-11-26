@@ -17,6 +17,8 @@ h4 {
   color: #3498db;
 }
 
+/* Global navigation styles */
+
 #globe_nav {
     list-style-type: none;
     margin: 0;
@@ -38,6 +40,13 @@ h4 {
   padding: 8px;
 }
 
+.active {
+  background-color: #1a5276;
+  color: white;
+}
+
+/* Page content styles */
+
 .container {
     display: flex;
     margin-top: 70px;
@@ -45,13 +54,17 @@ h4 {
 
 #page_nav {
     width: 200px;
-    flex-shrink: 0;
-    list-style-type: none;
-    margin-right: 20px;
     height: fit-content;
+    flex-shrink: 0;
+    margin-right: 20px;
     background-color: #5dade2;
-    align-self: flex-start;
-    z-index: 999;
+}
+
+#page_nav li a {
+  display: block;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
 }
 
 .intro{
@@ -59,7 +72,6 @@ h4 {
   height: auto;
   overflow: hidden;
 }
-
 
 .main-content {
     flex-grow: 1;
@@ -77,15 +89,6 @@ h4 {
     border-radius: 8px;
 }
 
-@media (max-width: 768px) {
-    .main-content img {
-        float: none;
-        display: block;
-        margin: 0 auto 15px auto;
-        max-width: 100%;
-    }
-}
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -95,21 +98,7 @@ ul {
     border-radius: 5px;
 }
 
-#page_nav li a {
-  display: block;
-  padding: 8px;
-  color: white;
-  text-decoration: none;
-}
-
-
-.active {
-  background-color: #1a5276;
-  color: white;
-}
-
-
-
+/* Shop-table styles*/
 
 .shop-table {
     width: 100%;
@@ -153,6 +142,8 @@ ul {
     border-bottom: 2px solid #3498db;
     padding-bottom: 5px;
 }
+
+/* Achievement-table styles*/
 
 .achievements-table {
     width: 100%;
@@ -219,7 +210,6 @@ ul {
         line-height: 1.4;
     }
     
-    /* Адаптивная навигация */
     #globe_nav {
         height: auto;
         flex-wrap: wrap;
@@ -243,14 +233,12 @@ ul {
         height: 40px !important;
     }
     
-    /* Основной контейнер */
     .container {
         flex-direction: column;
         margin-top: 80px;
         padding: 10px;
     }
     
-    /* Скрываем боковую навигацию на мобильных */
     #page_nav {
         display: none;
     }
@@ -272,7 +260,7 @@ ul {
         max-width: 100%;
     }
     
-    /* Улучшаем читаемость текста */
+
     h1 {
         margin: 10px;
         font-size: 1.4em;
@@ -289,7 +277,7 @@ ul {
         margin: 12px 0 8px 0;
     }
     
-    /* Адаптируем таблицы */
+
     .shop-table, .achievements-table {
         font-size: 0.85em;
     }
