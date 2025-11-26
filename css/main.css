@@ -202,8 +202,6 @@ ul {
     border-radius: 4px;
 }
 
-
-
 @media (max-width: 768px) {
     body {
         font-size: 14px;
@@ -240,7 +238,13 @@ ul {
     }
     
     #page_nav {
-        display: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #5dade2;
     }
     
     .main-content {
@@ -303,7 +307,6 @@ ul {
         height: 80px;
     }
     
-    /* Улучшаем списки */
     ul {
         padding: 10px;
     }
@@ -313,7 +316,6 @@ ul {
         padding: 5px 0;
     }
     
-    /* Адаптация для очень маленьких экранов */
     @media (max-width: 480px) {
         #globe_nav li {
             min-width: 50%;
@@ -330,16 +332,6 @@ ul {
         .achievement-icon {
             width: 35px;
             height: 35px;
-        }
-    }
-    
-    @media (max-width: 768px) and (orientation: landscape) {
-        #globe_nav li {
-            min-width: 20%;
-        }
-        
-        .container {
-            margin-top: 70px;
         }
     }
 }
